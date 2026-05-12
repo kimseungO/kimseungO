@@ -2,16 +2,15 @@
 
 <div align="center">
   
-  ### ☁️ 인프라의 근간을 탐구하고 최적화하는 클라우드 엔지니어 김승오입니다.
+  ### ☁️ 인프라의 근간을 탐구하는 클라우드 플랫폼 엔지니어 김승오입니다.
   
-  "단순한 구축을 넘어, 네트워크 트래픽 체인부터 커널 레벨의 스케줄링까지 깊이 파고들어 문제의 원인을 찾아냅니다." <br>
-  가상화, 네트워크, 컨테이너 오케스트레이션에 대한 깊은 이해를 바탕으로 고가용성 및 확장성을 갖춘 클라우드 인프라를 설계합니다.
+  "단순한 구축을 넘어, 네트워크 트래픽 체인부터 데이터 IO 병목점 탐색까지 깊이 파고들어 문제의 원인을 찾아냅니다." <br>
+  가상화, 네트워크, 컨테이너 오케스트레이션에 대한 이해를 바탕으로 고가용성 및 확장성을 갖춘 클라우드 플랫폼을 설계합니다.
 
   <br>
 
   [![Velog](https://img.shields.io/badge/Velog-20CEB3?style=for-the-badge&logo=velog&logoColor=white)](https://velog.io/@rtd7878)
   [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rtd7878@gmail.com)
-  
 </div>
 
 <br>
@@ -19,6 +18,7 @@
 ## 📊 GitHub & Algorithm Stats
 
 <div align="center">
+  
   [![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=rtd7878)](https://solved.ac/rtd7878)
   [![GitHub Streak](https://streak-stats.demolab.com/?user=kimseungO&theme=dark)](https://git.io/streak-stats)
 </div>
