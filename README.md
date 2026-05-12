@@ -1,4 +1,7 @@
+<div align="center">
+  
 ![header](https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=환영합니다.😊&fontSize=70)
+</div>
 
 <div align="center">
   
