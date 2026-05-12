@@ -1,6 +1,6 @@
 <div align="center">
   
-![header](https://capsule-render.vercel.app/api?type=waving&color=69E2FF&height=300&section=header&text=환영합니다.😊&fontSize=50)
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=환영합니다.😊&fontSize=50)
 </div>
 
 <div align="center">
@@ -43,20 +43,26 @@
 
 ## 🚀 Key Projects
 
-### 1. 컨테이너 기반 웹 서비스 인프라 고도화
-- **기간**: 2025.05
-- **내용**: 3-tier 온프레미스 환경의 WordPress 블로그를 Kubernetes 기반 컨테이너 오케스트레이션 환경으로 마이그레이션.
-- **성과**: Ingress 기반 라우팅, MetalLB, HPA 구성으로 고가용성 및 확장성 확보. PVC/PV 동기화 이슈 및 권한 문제 등 커널 레벨의 트러블슈팅 경험 축적.
+### 1️ 뉴스 요약 서비스(뉴썸) 클라우드 마이그레이션
+- **기간/소속**: 2025.07 / 교보DTS Cloud Architecture DX Academy
+- **내용**: 3-Tier 온프레미스 인프라를 AWS 환경으로 마이그레이션 및 고도화.
+- **주요 성과**:
+  - **비용 분석**: EC2 Auto Scaling vs EKS 환경의 리소스 집적도 및 월별 유지 비용(Instance, RDS, Network) 비교 분석.
+  - **성능 검증**: 부하 테스트를 통해 트래픽 급증 시 EKS의 오토스케일링 성능과 무중단 배포(Rolling Update) 안정성 확보.
 
-### 2. 스마트 온실 데이터 분석/추론을 위한 MLOps 인프라 구축
-- **기간**: 2024.01 ~ 2024.12
-- **내용**: 대규모 데이터 처리와 ML 운영 자동화를 위한 완전 컨테이너 기반 분산 AI 파이프라인 아키텍처 설계.
-- **성과**: 데이터 전처리와 훈련 단계를 분리하여 **Data Shuffling 병목 현상을 해결**하고 리소스 효율성을 극대화함. (관련 내용 **[Scalable MLOps Framework Using Containerized Cloud]** 논문 작성 기여)
+### 2️ 컨테이너 기반 웹 서비스 인프라 고도화
+- **기간**: 2025.05 (개인 프로젝트)
+- **내용**: WordPress 기술 블로그를 Kubernetes 기반 고가용성 인프라로 전환.
+- **주요 성과**:
+  - **트러블슈팅**: MySQL Pod의 Pending 상태(PVC Selector 미칭), 데이터 동기화 이슈, Ingress SSL 적용 문제 등을 해결하며 K8s 리소스 메커니즘 체득.
+  - **자동화**: HPA와 MetalLB를 활용한 LoadBalancing 환경 구축으로 실제 서비스 수준의 가용성 구현.
 
-### 3. Airoverseer (드론 환경 모니터링 시스템)
-- **내용**: 젯슨나노, 아두이노 센서 데이터를 수집하고 YoloV8 객체 탐지를 수행하는 클라우드 연동 모니터링 아키텍처 구축.
-- **역할**: AWS 인프라(EC2, RDS, EBS, 보안 그룹 등) 전체 아키텍처 설계 및 구축 담당.
-
+### 3️ Scalable MLOps Framework 구축 및 연구
+- **기간**: 2024.01 ~ 2024.12 (학부연구생)
+- **내용**: 대규모 스마트 온실 데이터 처리를 위한 완전 컨테이너 기반 MLOps 인프라 설계.
+- **주요 성과**:
+  - **병목 해결**: 데이터 전처리(Spark)와 훈련(PyTorch) 단계를 분리하고 로컬 노드 분할 저장을 통해 **Data Shuffling 병목 현상을 획기적으로 개선**.
+  - **학술 기여**: 해당 연구 내용을 기반으로 논문(Scalable MLOps Framework...) 작성 및 기술력 검증.
 <br>
 
 ## 💡 Troubleshooting Deep Dive
