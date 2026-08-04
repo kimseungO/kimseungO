@@ -1,79 +1,159 @@
-<div align="center">
-  
-![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=환영합니다.&fontSize=50)
-</div>
+# 김승오 | Cloud Infrastructure Engineer
 
-<div align="center">
-  
-  ### 인프라의 근간을 탐구하는 클라우드 플랫폼 엔지니어 김승오입니다.
-  
-  "단순한 구축을 넘어, 네트워크 트래픽 체인부터 데이터 IO 병목점 탐색까지 깊이 파고들어 문제의 원인을 찾아냅니다." <br>
-  가상화, 네트워크, 컨테이너 오케스트레이션에 대한 이해를 바탕으로 고가용성 및 확장성을 갖춘 클라우드 플랫폼을 설계합니다.
+인프라 선택지를 직접 구축해 정량적으로 비교하고, 측정된 근거로 아키텍처를 판단합니다.
+관리형 플랫폼이 추상화하는 계층을 직접 구성하며 스토리지·네트워크·가상화 전 구간의 동작 원리를 확인해 왔습니다.
 
-  <br>
+`OpenStack` · `Ceph` · `Kubernetes` · `AWS` · `Linux`
 
-  [![Velog](https://img.shields.io/badge/Velog-20CEB3?style=for-the-badge&logo=velog&logoColor=white)](https://velog.io/@rtd7878)
-  [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rtd7878@gmail.com)
-</div>
+[velog.io/@rtd7878](https://velog.io/@rtd7878) · rtd7878@gmail.com
 
-<br>
-
-## GitHub & Algorithm Stats
-
-<div align="center">
-  
-  [![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=rtd7878)](https://solved.ac/rtd7878)
-  [![GitHub Streak](https://streak-stats.demolab.com/?user=kimseungO&theme=dark)](https://git.io/streak-stats)
-</div>
-
-<br>
-
-## Tech Stack
-
-### Cloud & Infrastructure
-<img src="https://img.shields.io/badge/Amazon AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"> <img src="https://img.shields.io/badge/OpenStack-ED1944?style=for-the-badge&logo=openstack&logoColor=white"> <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"> <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white">
-
-### Container & Orchestration
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"> <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"> <img src="https://img.shields.io/badge/Apache Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white"> 
-
-### Backend & Database
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"> <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white">
-
-<br>
-
-## Key Projects
-
-### 1️ 뉴스 요약 서비스(뉴썸) 클라우드 마이그레이션
-- **기간/소속**: 2025.07 / 교보DTS Cloud Architecture DX Academy
-- **내용**: 3-Tier 온프레미스 인프라를 AWS 환경으로 마이그레이션 및 고도화.
-- **주요 성과**:
-  - **비용 분석**: EC2 Auto Scaling vs EKS 환경의 리소스 집적도 및 월별 유지 비용(Instance, RDS, Network) 비교 분석.
-  - **성능 검증**: 부하 테스트를 통해 트래픽 급증 시 EKS의 오토스케일링 성능과 무중단 배포(Rolling Update) 안정성 확보.
-
-### 2️ 컨테이너 기반 웹 서비스 인프라 고도화
-- **기간**: 2025.05 (개인 프로젝트)
-- **내용**: WordPress 기술 블로그를 Kubernetes 기반 고가용성 인프라로 전환.
-- **주요 성과**:
-  - **트러블슈팅**: MySQL Pod의 Pending 상태(PVC Selector 미칭), 데이터 동기화 이슈, Ingress SSL 적용 문제 등을 해결하며 K8s 리소스 메커니즘 체득.
-  - **자동화**: HPA와 MetalLB를 활용한 LoadBalancing 환경 구축으로 실제 서비스 수준의 가용성 구현.
-
-### 3️ Scalable MLOps Framework 구축 및 연구
-- **기간**: 2024.01 ~ 2024.12 (학부연구생)
-- **내용**: 대규모 스마트 온실 데이터 처리를 위한 완전 컨테이너 기반 MLOps 인프라 설계.
-- **주요 성과**:
-  - **병목 해결**: 데이터 전처리(Spark)와 훈련(PyTorch) 단계를 분리하고 로컬 노드 분할 저장을 통해 **Data Shuffling 병목 현상을 획기적으로 개선**.
-  - **학술 기여**: 해당 연구 내용을 기반으로 논문(Scalable MLOps Framework...) 작성 및 기술력 검증.
-<br>
-
-## Troubleshooting Deep Dive
-> 문제를 겉핥기식으로 해결하지 않고 인프라와 OS 레벨의 원인을 분석합니다.
-- **OpenStack OVS & 네트워크 마비 디버깅**: 다중 보안 그룹 충돌이 커널의 `iptables` 체인 룰셋으로 변환되며 DHCP 응답을 차단하는 과정을 `dmesg`, `syslog`로 추적 및 해결.
-- **리눅스 프로세스 스케줄러 부하 실험**: 쉘 스크립트를 통한 부하 테스트로 논리 CPU의 Time Slice 분배 및 프로세스 상태를 모니터링(`top`, `htop`, `ps`)하여 시스템 성능 저하 원인 분석.
-
-<br>
+---
 
 ## Experience
-- **NHN Enterprise 서비스관제팀** (2026.01 ~ now) - 서비스 모니터링 및 실시간 조치
-- **한국철도기술연구원 인턴** (2024.07 ~ 2024.12) - ROS2 통신 및 자율 주행 모델 패키지 개발
-- **한국교통대학교 Database Lab 학부연구생** (2023.03 ~ 2024.06) - AI/ML 컨테이너 클라우드 시스템 구축 연구
 
+| 기간 | 소속 | 담당 |
+|---|---|---|
+| 2026.01 ~ | NHN Enterprise 서비스관제팀 | 서비스 모니터링 및 장애 실시간 조치 |
+| 2024.07 ~ 2024.12 | 한국철도기술연구원 (인턴) | ROS2 노드 간 통신, 자율주행 모델 개선 |
+| 2023.03 ~ 2024.06 | 한국교통대학교 Database Lab (학부연구생) | AI/ML 컨테이너 클라우드 인프라 구축 |
+
+---
+
+## Projects
+
+### 1. Managed vs Self-managed Kubernetes 플랫폼 비교 · `진행중`
+
+동일한 3-tier 워크로드를 관리형 플랫폼(NHN Cloud NKS)과 자체 구축 플랫폼(OpenStack + Ceph)에
+각각 배포하여, 관리형 플랫폼이 추상화하는 계층을 직접 측정·비교하는 프로젝트입니다.
+
+| 구성 | 내용 | 상태 |
+|---|---|---|
+| [openstack-private-cloud](https://github.com/kimseungO/openstack-private-cloud) | OpenStack Caracal · Ceph Quincy 구축, Octavia LBaaS, Cinder CSI 연동 | 진행중 |
+| [nks-storage-layer-analysis](https://github.com/kimseungO/nks-storage-layer-analysis) | 물리 디바이스부터 Pod까지 6계층 분리 측정, 플랫폼 QoS 상한 규명 | 완료 |
+| [nks-3tier](https://github.com/kimseungO/nks-3tier) | NKS 운영 환경 — Jenkins + Kaniko CI/CD, Prometheus 모니터링 | 완료 |
+| [suwon-daytour-3tier](https://github.com/kimseungO/suwon-daytour-3tier) | 3-tier 애플리케이션 및 Kubernetes 매니페스트 | 완료 |
+
+**주요 결과**
+
+- fio 벤치마크 결과가 특정 값에 정확히 수렴하는 현상을 발견하고, Little's Law(큐 깊이 ÷ IOPS = 지연)로
+  검증하여 하드웨어 한계가 아닌 플랫폼 측 QoS 상한임을 규명
+- 물리 NVMe → Ceph OSD → RBD → Cinder → PVC → Pod 6개 계층을 분리 측정해 성능 손실 구간을 특정
+- Replica 3 환경에서 BlueStore 이중 쓰기로 인한 쓰기 증폭을 이론값과 실측값으로 비교 정량화
+
+**Stack** — OpenStack Caracal (Kolla-Ansible), Ceph Quincy (cephadm), Kubernetes, Octavia,
+Cinder CSI, Calico, Jenkins, Kaniko, Prometheus, Grafana, fio
+
+---
+
+### 2. 온프레미스 인프라의 클라우드 마이그레이션 방안 비교 · `완료`
+
+`2025.06 ~ 2025.07` · 4인 팀 · 교보DTS Cloud Architecture DX Academy 3기
+
+AI 뉴스 요약 서비스를 대상으로, 온프레미스 3-tier 환경을 EC2 Auto Scaling과 EKS
+두 가지 방식으로 이관하고 부하 테스트와 비용을 근거로 최종 아키텍처를 선정했습니다.
+
+**주요 결과**
+
+| 항목 | EC2 Auto Scaling | EKS |
+|---|---|---|
+| 평균 응답 속도 (1,000 VU) | 4.8s | 4.01s |
+| 처리량 | 77.3 req/s | 86.5 req/s |
+| 요청 성공률 | 97.66% | 98.01% |
+| 월 비용 | $462 | $584 |
+
+- 성능 차이는 크지 않은 반면 EKS가 월 $121 높아, 서비스 규모를 고려해 EC2 Auto Scaling으로 최종 선정
+- 컨테이너 기반이 항상 최적은 아니며 워크로드 특성에 맞는 인프라 선택이 필요함을 실측으로 확인
+
+**담당** — 프로젝트 기획, 마이그레이션 전 과정 설계, Auto Scaling/HPA 구성,
+CI/CD 파이프라인 구축, Grafana·Prometheus 모니터링 구축, 발표
+
+**Stack** — AWS (EC2, VPC, RDS, EKS, ALB, Route 53, CodePipeline, ECR, CloudWatch, Secrets Manager),
+Kubernetes, Nginx, MySQL, k6, Grafana
+
+📄 [발표자료](https://drive.google.com/file/d/1J7cCIzJZ83wChx1pDOXU_zPTofSKaOaX/view?usp=sharing)
+
+---
+
+### 3. 컨테이너 기반 웹 서비스 인프라 고도화 · `완료`
+
+`2025.05` · 개인 프로젝트
+
+WordPress 기반 기술 블로그를 3-tier 온프레미스 환경부터 Kubernetes 오케스트레이션 환경까지
+단계적으로 고도화하며, 스토리지 계층을 직접 구성했습니다.
+
+**주요 내용**
+
+- NFS Server, iSCSI, RAID, XFS + autofs를 활용한 스토리지 계층 직접 구성
+- StatefulSet과 PV/PVC를 연동한 상태 저장 워크로드 운영
+- MetalLB · Ingress · HPA를 통한 로드밸런싱 및 확장성 확보
+- PVC Selector 불일치로 인한 MySQL Pod Pending, 데이터 동기화, Ingress SSL 적용 이슈 해결
+
+**Stack** — Linux, Docker, Kubernetes (Namespace, Deployment, StatefulSet, Service, Ingress,
+MetalLB, HPA, ConfigMap), NFS, iSCSI, RAID, XFS, WordPress, MySQL
+
+📄 [포트폴리오](https://drive.google.com/file/d/1FaU3yWNY2e93D2S6qKSWEaHy6zldtPod/view?usp=sharing)
+
+---
+
+### 4. Scalable MLOps Framework Using Containerized Cloud · `완료`
+
+`2024.01 ~ 2024.12` · 3인 · 농촌진흥청 지원 연구과제 · 공동저자
+
+스마트 온실의 대규모 데이터 처리와 ML 운영 자동화를 위한 컨테이너 기반 MLOps 인프라를 설계했습니다.
+
+**주요 내용**
+
+- 전처리와 학습을 동일 Pod에서 실행하는 기존 방식의 확장성·리소스 경합 문제를 분석
+- 전처리 Pod과 학습 Pod을 분리하되, Spark DataFrame을 노드별로 분할 저장 후 학습 단계에서
+  재구성하는 방식으로 데이터 로컬리티를 유지하여 셔플링 병목 제거
+- 담당: HDFS · Spark · Kubernetes 환경 구축, Airflow 기반 ETL 파이프라인 구축
+
+**Stack** — HDFS, Spark, Kubernetes, Airflow, MongoDB, Kafka, Ray, MLflow
+
+📄 [논문](https://drive.google.com/file/d/12ih7lfdrP1t-CtKp39TIsBgcUuFEVFn6/view?usp=sharing) · [발표자료](https://drive.google.com/file/d/1Jog_Vs0yiZLi4AYs1GHRpn_L0mDWmJY-/view?usp=sharing)
+
+---
+
+## Troubleshooting
+
+문제를 표면에서 처리하지 않고, 인프라와 OS 레벨의 근본 원인까지 추적합니다.
+
+**OpenStack Octavia 구축 — 5개 관문 트러블슈팅**
+Amphora 이미지 빌드 실패부터 LB 활성화까지 다섯 단계의 문제를 순차 해결.
+compute 노드의 `bridge_mappings` 부재로 인한 포트 바인딩 실패를 Neutron 로그로 추적하고,
+provider VLAN 방식의 controller 연결 부재를 확인한 뒤 검증된 tenant(VXLAN) 방식으로 전환 판단.
+[상세 기록 →](https://velog.io/@rtd7878)
+
+**NKS External LoadBalancer 사설 IP 할당 문제**
+Ingress 재설치와 annotation 조정으로 해결되지 않자, public 서브넷 대조 실험을 구성하여
+서브넷 유형이 원인임을 확정. NodePort 기반 Ingress + 수동 공인 LB + Floating IP로 해결.
+
+**Cinder CSI PVC 권한 오류**
+`fsGroup` 설정으로 해결되지 않는 원인을 볼륨 권한 직접 확인을 통해 추적하여,
+StorageClass의 `fsType` 미선언이 CSI 드라이버의 fsGroup 정책 적용을 막는 구조임을 확인.
+
+**OpenStack OVS 네트워크 마비**
+다중 보안 그룹 충돌이 커널 `iptables` 체인 룰셋으로 변환되며 DHCP 응답을 차단하는 과정을
+`dmesg` · `syslog`로 추적 및 해결.
+
+---
+
+## Skills
+
+| 구분 | 내용 |
+|---|---|
+| **Virtualization / IaaS** | OpenStack (Kolla-Ansible), KVM, AWS EC2 · VPC · EKS · ECS |
+| **Storage** | Ceph (RBD, BlueStore), Cinder, NFS, iSCSI, RAID, XFS |
+| **Container** | Kubernetes, Docker, Helm, Calico, MetalLB, Ingress, HPA |
+| **Network** | Neutron · Open vSwitch, VLAN/VXLAN, ALB/NLB, Route 53, NAT |
+| **CI/CD** | Jenkins, Kaniko, AWS CodePipeline · CodeBuild, Terraform |
+| **Observability** | Prometheus, Grafana, Grafana Alloy, CloudWatch, fio, k6 |
+| **Language** | Python, Bash |
+| **Data** | HDFS, Spark, Airflow, MySQL, MongoDB |
+
+---
+
+## Certifications
+
+- 정보처리기사 (한국산업인력공단, 2024.09)
+- TOEIC 795 (ETS, 2025.05)
