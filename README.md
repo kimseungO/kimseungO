@@ -118,7 +118,7 @@ MetalLB, HPA, ConfigMap), NFS, iSCSI, RAID, XFS, WordPress, MySQL
 
 ---
 
-## Troubleshooting
+## Troubleshooting 기록
 
 문제를 표면에서 처리하지 않고, 인프라와 OS 레벨의 근본 원인까지 추적합니다.
 
@@ -126,7 +126,6 @@ MetalLB, HPA, ConfigMap), NFS, iSCSI, RAID, XFS, WordPress, MySQL
 Amphora 이미지 빌드 실패부터 LB 활성화까지 다섯 단계의 문제를 순차 해결.
 compute 노드의 `bridge_mappings` 부재로 인한 포트 바인딩 실패를 Neutron 로그로 추적하고,
 provider VLAN 방식의 controller 연결 부재를 확인한 뒤 검증된 tenant(VXLAN) 방식으로 전환 판단.
-[상세 기록 →](https://velog.io/@rtd7878)
 
 **NKS External LoadBalancer 사설 IP 할당 문제**
 Ingress 재설치와 annotation 조정으로 해결되지 않자, public 서브넷 대조 실험을 구성하여
@@ -139,6 +138,9 @@ StorageClass의 `fsType` 미선언이 CSI 드라이버의 fsGroup 정책 적용�
 **OpenStack OVS 네트워크 마비**
 다중 보안 그룹 충돌이 커널 `iptables` 체인 룰셋으로 변환되며 DHCP 응답을 차단하는 과정을
 `dmesg` · `syslog`로 추적 및 해결.
+
+...
+[상세 기록 →](https://velog.io/@rtd7878)
 
 ---
 
