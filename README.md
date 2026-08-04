@@ -1,6 +1,6 @@
 <div align="center">
   
-![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=환영합니다.😊&fontSize=50)
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=환영합니다.&fontSize=50)
 </div>
 
 <div align="center">
@@ -18,7 +18,7 @@
 
 <br>
 
-## 📊 GitHub & Algorithm Stats
+## GitHub & Algorithm Stats
 
 <div align="center">
   
@@ -28,7 +28,7 @@
 
 <br>
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Cloud & Infrastructure
 <img src="https://img.shields.io/badge/Amazon AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"> <img src="https://img.shields.io/badge/OpenStack-ED1944?style=for-the-badge&logo=openstack&logoColor=white"> <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"> <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white">
@@ -41,7 +41,7 @@
 
 <br>
 
-## 🚀 Key Projects
+## Key Projects
 
 ### 1️ 뉴스 요약 서비스(뉴썸) 클라우드 마이그레이션
 - **기간/소속**: 2025.07 / 교보DTS Cloud Architecture DX Academy
@@ -65,14 +65,14 @@
   - **학술 기여**: 해당 연구 내용을 기반으로 논문(Scalable MLOps Framework...) 작성 및 기술력 검증.
 <br>
 
-## 💡 Troubleshooting Deep Dive
+## Troubleshooting Deep Dive
 > 문제를 겉핥기식으로 해결하지 않고 인프라와 OS 레벨의 원인을 분석합니다.
 - **OpenStack OVS & 네트워크 마비 디버깅**: 다중 보안 그룹 충돌이 커널의 `iptables` 체인 룰셋으로 변환되며 DHCP 응답을 차단하는 과정을 `dmesg`, `syslog`로 추적 및 해결.
 - **리눅스 프로세스 스케줄러 부하 실험**: 쉘 스크립트를 통한 부하 테스트로 논리 CPU의 Time Slice 분배 및 프로세스 상태를 모니터링(`top`, `htop`, `ps`)하여 시스템 성능 저하 원인 분석.
 
 <br>
 
-## 📝 Experience
+## Experience
 - **NHN Enterprise 서비스관제팀** (2026.01 ~ now) - 서비스 모니터링 및 실시간 조치
 - **한국철도기술연구원 인턴** (2024.07 ~ 2024.12) - ROS2 통신 및 자율 주행 모델 패키지 개발
 - **한국교통대학교 Database Lab 학부연구생** (2023.03 ~ 2024.06) - AI/ML 컨테이너 클라우드 시스템 구축 연구
